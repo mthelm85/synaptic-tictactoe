@@ -18,7 +18,7 @@ app.use(cors({corsOptions}))
 
 const t3 = require('./mlp.js')
 
-app.post('/get-probability', (req, res) => {
+app.post('/get-result', (req, res) => {
   res.json({ Result: t3.t3(req.body.array) })
 })
 
